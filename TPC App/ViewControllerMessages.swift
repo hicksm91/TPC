@@ -11,38 +11,30 @@ import WebKit
 
 class ViewControllerMessages: UIViewController {
     
-    private var webView: WKWebView?
+    // MARK: - Outlets
     
-    override func loadView() {
-        webView = WKWebView()
-        
-        //If you want to implement the delegate
-        //webView?.navigationDelegate = self
-        
-        view = webView
-    }
+    @IBOutlet weak var webView: WKWebView!
+    
+    // MARK: - View Lifecycle
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-        if let url = URL(string: "https://podcasts.apple.com/us/podcast/turning-point-church/id1458427155?mt=2") {
-            let req = URLRequest(url: url)
-            webView?.load(req)
+        loadPodcasts()
+    }
+    
+    // MARK: - WebView Methods
+    
+    func loadPodcasts() {
+        
+        print("Loading podcasts...")
+        
+        guard let url = URL(string: "https://podcasts.apple.com/us/podcast/turning-point-church/id1458427155?mt=2") else {
+            print("Failed to create URL object from podcasts address")
+            return
         }
+        
+        webView.load(URLRequest(url: url))
     }
 }
-// Do any additional setup after loading the view.
-
-
-
-/*
- // MARK: - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
- // Get the new view controller using segue.destination.
- // Pass the selected object to the new view controller.
- }
- */
-
-
