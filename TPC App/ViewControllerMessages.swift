@@ -50,7 +50,25 @@ class ViewControllerMessages: UIViewController, WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         
         print("Finished loading")
-        
         loadingSpinner.stopAnimating()
+    }
+    
+    // This method will keep users within the podcasts.apple.com domain
+    // If you don't care whether they can navigate around, you can remove this
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        
+        guard let requestURL = navigationAction.request.url else {
+            decisionHandler(.cancel)
+            return
+        }
+        
+        if requestURL.absoluteString.contains("podcasts.apple.com") {
+            print("Navigating to podcast url")
+            decisionHandler(.allow)
+        }
+        else {
+            print("Cancelling navigation to: \(requestURL.absoluteString)")
+            decisionHandler(.cancel)
+        }
     }
 }
