@@ -54,25 +54,35 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="imv-uu-3cO">
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imv-uu-3cO">
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="3yw-nk-8Nk">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="imv-uu-3cO" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="3oD-Jn-0hO"/>
+                            <constraint firstItem="3yw-nk-8Nk" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="Bga-pG-RyV"/>
+                            <constraint firstItem="imv-uu-3cO" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="PB1-c8-JJx"/>
+                            <constraint firstItem="imv-uu-3cO" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="oja-Ue-AKv"/>
                             <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="3yw-nk-8Nk" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="soO-s7-acE"/>
+                            <constraint firstItem="imv-uu-3cO" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="yoZ-yC-0PG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Messages" image="icons8-deezer-filled-32" landscapeImage="icons8-deezer-filled-32" largeContentSizeImage="icons8-deezer-filled-32" selectedImage="icons8-deezer-filled-32" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="loadingSpinner" destination="3yw-nk-8Nk" id="vX2-iI-0fC"/>
                         <outlet property="webView" destination="imv-uu-3cO" id="ZR3-4E-qNw"/>
                     </connections>
                 </viewController>

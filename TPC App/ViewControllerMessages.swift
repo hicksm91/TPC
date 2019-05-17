@@ -9,11 +9,12 @@
 import UIKit
 import WebKit
 
-class ViewControllerMessages: UIViewController {
+class ViewControllerMessages: UIViewController, WKNavigationDelegate {
     
     // MARK: - Outlets
     
     @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var loadingSpinner: UIActivityIndicatorView!
     
     // MARK: - View Lifecycle
     
@@ -21,6 +22,14 @@ class ViewControllerMessages: UIViewController {
         
         super.viewDidLoad()
         
+        webView.navigationDelegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
+        loadingSpinner.startAnimating()
         loadPodcasts()
     }
     
@@ -36,5 +45,12 @@ class ViewControllerMessages: UIViewController {
         }
         
         webView.load(URLRequest(url: url))
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        
+        print("Finished loading")
+        
+        loadingSpinner.stopAnimating()
     }
 }
