@@ -19,6 +19,12 @@
 		55891D9E227B4758001A230E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55891D9D227B4758001A230E /* Assets.xcassets */; };
 		55891DAC227B4758001A230E /* TPC_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55891DAB227B4758001A230E /* TPC_AppTests.swift */; };
 		55891DB7227B4758001A230E /* TPC_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55891DB6227B4758001A230E /* TPC_AppUITests.swift */; };
+		90446EDEE11CF6001AEAAC5D /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7F103823748C2D8A47E743 /* libPods-OneSignalNotificationServiceExtension.a */; };
+		969FFE0722A9F8CC00627B35 /* Readme in Resources */ = {isa = PBXBuildFile; fileRef = 969FFE0622A9F8CC00627B35 /* Readme */; };
+		969FFE0922A9FA0E00627B35 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 969FFE0822A9FA0E00627B35 /* Podfile */; };
+		969FFE1122A9FB8500627B35 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969FFE1022A9FB8500627B35 /* NotificationService.swift */; };
+		969FFE1522A9FB8500627B35 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 969FFE0E22A9FB8500627B35 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B26BBA0AFFE4ABDE4345F993 /* libPods-TPC App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA8B44002B0501267E34B6A /* libPods-TPC App.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +42,32 @@
 			remoteGlobalIDString = 55891D90227B4756001A230E;
 			remoteInfo = "TPC App";
 		};
+		969FFE1322A9FB8500627B35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55891D89227B4756001A230E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 969FFE0D22A9FB8500627B35;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		969FFE1922A9FB8500627B35 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				969FFE1522A9FB8500627B35 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2571857DE33E2A2E85C8CEE5 /* Pods-TPC App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPC App.debug.xcconfig"; path = "Target Support Files/Pods-TPC App/Pods-TPC App.debug.xcconfig"; sourceTree = "<group>"; };
+		3BA8B44002B0501267E34B6A /* libPods-TPC App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TPC App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		558037CB227B4B37003A88D4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		558037CC227B4B37003A88D4 /* ViewControllerGiving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerGiving.swift; sourceTree = "<group>"; };
 		558037CD227B4B37003A88D4 /* ViewControllerMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMessages.swift; sourceTree = "<group>"; };
@@ -57,6 +86,16 @@
 		55891DB2227B4758001A230E /* TPC AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TPC AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55891DB6227B4758001A230E /* TPC_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPC_AppUITests.swift; sourceTree = "<group>"; };
 		55891DB8227B4758001A230E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D132EFD065C53E1F41A8985 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		8D7F103823748C2D8A47E743 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		969FFE0622A9F8CC00627B35 /* Readme */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
+		969FFE0822A9FA0E00627B35 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		969FFE0E22A9FB8500627B35 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		969FFE1022A9FB8500627B35 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		969FFE1222A9FB8500627B35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		969FFE1A22A9FD4C00627B35 /* TPC App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TPC App.entitlements"; sourceTree = "<group>"; };
+		A293EBF33CD8B5B7C14B8923 /* Pods-TPC App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPC App.release.xcconfig"; path = "Target Support Files/Pods-TPC App/Pods-TPC App.release.xcconfig"; sourceTree = "<group>"; };
+		DA0F6E4CD536D9D97C4156B1 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26BBA0AFFE4ABDE4345F993 /* libPods-TPC App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,16 +121,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		969FFE0B22A9FB8500627B35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90446EDEE11CF6001AEAAC5D /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		55891D88227B4756001A230E = {
 			isa = PBXGroup;
 			children = (
+				969FFE0822A9FA0E00627B35 /* Podfile */,
+				969FFE0622A9F8CC00627B35 /* Readme */,
 				55891D93227B4756001A230E /* TPC App */,
 				55891DAA227B4758001A230E /* TPC AppTests */,
 				55891DB5227B4758001A230E /* TPC AppUITests */,
+				969FFE0F22A9FB8500627B35 /* OneSignalNotificationServiceExtension */,
 				55891D92227B4756001A230E /* Products */,
+				7C943CEF0273E8CA7F67369D /* Pods */,
+				63C7F4D4B76ABB589E3480AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +153,7 @@
 				55891D91227B4756001A230E /* TPC App.app */,
 				55891DA7227B4758001A230E /* TPC AppTests.xctest */,
 				55891DB2227B4758001A230E /* TPC AppUITests.xctest */,
+				969FFE0E22A9FB8500627B35 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +161,7 @@
 		55891D93227B4756001A230E /* TPC App */ = {
 			isa = PBXGroup;
 			children = (
+				969FFE1A22A9FD4C00627B35 /* TPC App.entitlements */,
 				55891D94227B4756001A230E /* AppDelegate.swift */,
 				55891D96227B4756001A230E /* FirstViewController.swift */,
 				55891D98227B4756001A230E /* SecondViewController.swift */,
@@ -140,6 +195,35 @@
 			path = "TPC AppUITests";
 			sourceTree = "<group>";
 		};
+		63C7F4D4B76ABB589E3480AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BA8B44002B0501267E34B6A /* libPods-TPC App.a */,
+				8D7F103823748C2D8A47E743 /* libPods-OneSignalNotificationServiceExtension.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C943CEF0273E8CA7F67369D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2571857DE33E2A2E85C8CEE5 /* Pods-TPC App.debug.xcconfig */,
+				A293EBF33CD8B5B7C14B8923 /* Pods-TPC App.release.xcconfig */,
+				5D132EFD065C53E1F41A8985 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				DA0F6E4CD536D9D97C4156B1 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		969FFE0F22A9FB8500627B35 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				969FFE1022A9FB8500627B35 /* NotificationService.swift */,
+				969FFE1222A9FB8500627B35 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,13 +231,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55891DBB227B4758001A230E /* Build configuration list for PBXNativeTarget "TPC App" */;
 			buildPhases = (
+				3E602A2C807DFCF10E5C8950 /* [CP] Check Pods Manifest.lock */,
 				55891D8D227B4756001A230E /* Sources */,
 				55891D8E227B4756001A230E /* Frameworks */,
 				55891D8F227B4756001A230E /* Resources */,
+				969FFE1922A9FB8500627B35 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				969FFE1422A9FB8500627B35 /* PBXTargetDependency */,
 			);
 			name = "TPC App";
 			productName = "TPC App";
@@ -196,19 +283,45 @@
 			productReference = 55891DB2227B4758001A230E /* TPC AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		969FFE0D22A9FB8500627B35 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 969FFE1822A9FB8500627B35 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				F0AC8F8BE8739CC4783A75B9 /* [CP] Check Pods Manifest.lock */,
+				969FFE0A22A9FB8500627B35 /* Sources */,
+				969FFE0B22A9FB8500627B35 /* Frameworks */,
+				969FFE0C22A9FB8500627B35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 969FFE0E22A9FB8500627B35 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		55891D89227B4756001A230E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Turning Point Church";
 				TargetAttributes = {
 					55891D90227B4756001A230E = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					55891DA6227B4758001A230E = {
 						CreatedOnToolsVersion = 10.1;
@@ -219,6 +332,9 @@
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
 						TestTargetID = 55891D90227B4756001A230E;
+					};
+					969FFE0D22A9FB8500627B35 = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
@@ -238,6 +354,7 @@
 				55891D90227B4756001A230E /* TPC App */,
 				55891DA6227B4758001A230E /* TPC AppTests */,
 				55891DB1227B4758001A230E /* TPC AppUITests */,
+				969FFE0D22A9FB8500627B35 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +364,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969FFE0922A9FA0E00627B35 /* Podfile in Resources */,
+				969FFE0722A9F8CC00627B35 /* Readme in Resources */,
 				55891D9E227B4758001A230E /* Assets.xcassets in Resources */,
 				55891D9C227B4756001A230E /* Main.storyboard in Resources */,
 				558037D4227B4C1A003A88D4 /* TPCApp768.png in Resources */,
@@ -267,7 +386,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		969FFE0C22A9FB8500627B35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E602A2C807DFCF10E5C8950 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TPC App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0AC8F8BE8739CC4783A75B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55891D8D227B4756001A230E /* Sources */ = {
@@ -300,6 +473,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		969FFE0A22A9FB8500627B35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				969FFE1122A9FB8500627B35 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -312,6 +493,11 @@
 			isa = PBXTargetDependency;
 			target = 55891D90227B4756001A230E /* TPC App */;
 			targetProxy = 55891DB3227B4758001A230E /* PBXContainerItemProxy */;
+		};
+		969FFE1422A9FB8500627B35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 969FFE0D22A9FB8500627B35 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 969FFE1322A9FB8500627B35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -445,8 +631,11 @@
 		};
 		55891DBC227B4758001A230E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2571857DE33E2A2E85C8CEE5 /* Pods-TPC App.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "TPC App/TPC App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JZL5YW6D3V;
 				INFOPLIST_FILE = "TPC App/Info.plist";
@@ -464,8 +653,11 @@
 		};
 		55891DBD227B4758001A230E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A293EBF33CD8B5B7C14B8923 /* Pods-TPC App.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "TPC App/TPC App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JZL5YW6D3V;
 				INFOPLIST_FILE = "TPC App/Info.plist";
@@ -563,6 +755,48 @@
 			};
 			name = Release;
 		};
+		969FFE1622A9FB8500627B35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D132EFD065C53E1F41A8985 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JZL5YW6D3V;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TurningPointChurch.TPC-App.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		969FFE1722A9FB8500627B35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA0F6E4CD536D9D97C4156B1 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JZL5YW6D3V;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TurningPointChurch.TPC-App.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -598,6 +832,15 @@
 			buildConfigurations = (
 				55891DC2227B4758001A230E /* Debug */,
 				55891DC3227B4758001A230E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		969FFE1822A9FB8500627B35 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				969FFE1622A9FB8500627B35 /* Debug */,
+				969FFE1722A9FB8500627B35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

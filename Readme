@@ -1,0 +1,14 @@
+
+To install Cocoapods, you'll need Ruby (ruby 2.3.7p456 is what I used).
+
+Run 'sudo gem install cocoapods' from the project root.
+
+Close Xcode
+
+Run 'pod repo update'
+Run 'pod install'
+
+Open the .xcworkspace file NOT the .xcodeproj
+
+More info here:
+https://guides.cocoapods.org/using/getting-started.html
